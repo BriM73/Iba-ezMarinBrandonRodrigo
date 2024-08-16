@@ -16,26 +16,26 @@ namespace IbañezMarinBrandonRodrigo
         }
         public void insertarF(int item)
         {
-            Nodo auxiliar = new Nodo(); // creamos nodo temporal 
-            auxiliar.dato = item; // almacenamos el valor 
-            auxiliar.siguiente = null; // apunta al siguiente null
-            if (inicio == null) // verificar si la lista está vacía
+            Nodo auxiliar = new Nodo();  
+            auxiliar.dato = item; 
+            auxiliar.siguiente = null; 
+            if (inicio == null) 
             {
                 inicio = auxiliar;
             }
             else
             {
-                Nodo puntero; // para recoger el dato
+                Nodo puntero; 
                 puntero = inicio;
                 while (puntero.siguiente != null)
                 {
-                    puntero = puntero.siguiente; // se despliega la lista
+                    puntero = puntero.siguiente; 
                 }
                 puntero.siguiente = auxiliar;
             }
         }
 
-        // Método para agregar un nodo al final de la lista
+        
         public void InsertarAlFinal(int item)
         {
             Nodo auxiliar = new Nodo();
@@ -57,7 +57,7 @@ namespace IbañezMarinBrandonRodrigo
             }
         }
 
-        // Método para agregar un nodo al inicio de la lista
+        
         public void InsertarAlInicio(int item)
         {
             Nodo auxiliar = new Nodo();
@@ -66,7 +66,7 @@ namespace IbañezMarinBrandonRodrigo
             inicio = auxiliar;
         }
 
-        // Método para mostrar todos los elementos de la lista
+        
         public void Mostrar()
         {
             if (inicio == null)
@@ -114,7 +114,7 @@ namespace IbañezMarinBrandonRodrigo
             }
         }
 
-        // Método para encontrar el nodo medio de la lista
+        
         public Nodo EncontrarNodoMedio()
         {
             if (inicio == null)
